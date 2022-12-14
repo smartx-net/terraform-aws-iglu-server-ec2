@@ -240,6 +240,8 @@ locals {
     db_username = var.db_username
     db_password = var.db_password
 
+    extra_user_data = var.extra_user_data
+
     telemetry_script = join("", module.telemetry.*.amazon_linux_2_user_data)
 
     cloudwatch_logs_enabled   = var.cloudwatch_logs_enabled
