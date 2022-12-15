@@ -240,6 +240,8 @@ locals {
     db_username = var.db_username
     db_password = var.db_password
 
+    extra_user_data = var.extra_user_data
+
     java_opts = var.java_opts
 
     telemetry_script = join("", module.telemetry.*.amazon_linux_2_user_data)

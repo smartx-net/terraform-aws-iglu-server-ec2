@@ -138,6 +138,12 @@ variable "patches_allowed" {
   default     = true
 }
 
+variable "extra_user_data" {
+  description = "Extra user data to run"
+  default     = ""
+  type        = string
+}
+
 variable "java_opts" {
   description = "Custom Java Options"
   default     = ""
