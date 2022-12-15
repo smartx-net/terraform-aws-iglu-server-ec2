@@ -144,6 +144,12 @@ variable "extra_user_data" {
   type        = string
 }
 
+variable "java_opts" {
+  description = "Custom Java Options"
+  default     = ""
+  type        = string
+}
+
 # --- Telemetry
 
 variable "telemetry_enabled" {
