@@ -138,6 +138,12 @@ variable "patches_allowed" {
   default     = true
 }
 
+variable "java_opts" {
+  description = "Custom Java Options"
+  default     = ""
+  type        = string
+}
+
 # --- Telemetry
 
 variable "telemetry_enabled" {
